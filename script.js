@@ -4,6 +4,16 @@ const navLinks = document.querySelector('.nav-links');
 toggleButton.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.toggle-button');
+            const navLinks = document.querySelector('.nav-links');
+
+            toggleButton.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+            });
+        });
+
 let slideIndex = 0;
 showSlides();
 
